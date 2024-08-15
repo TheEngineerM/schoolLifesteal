@@ -1,0 +1,63 @@
+[00:23:49] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[00:23:51] [ServerMain/INFO]: No existing world data, creating new world
+[00:23:53] [ServerMain/INFO]: Loaded 1290 recipes
+[00:23:53] [ServerMain/INFO]: Loaded 1399 advancements
+[00:23:54] [Server thread/INFO]: Starting minecraft server version 1.21
+[00:23:54] [Server thread/INFO]: Loading properties
+[00:23:54] [Server thread/INFO]: Default game type: SURVIVAL
+[00:23:54] [Server thread/INFO]: Generating keypair
+[00:23:54] [Server thread/INFO]: Starting Minecraft server on *:25565
+[00:23:54] [Server thread/INFO]: Using epoll channel type
+[00:23:55] [Server thread/INFO]: Preparing level "world"
+[00:24:19] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[00:24:19] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:20] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:21] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:21] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:21] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:22] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:22] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:22] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:23] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:23] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:24] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:24] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:25] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:26] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:26] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:26] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:27] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:27] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:28] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:28] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:29] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:30] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:30] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[00:24:30] [Worker-Main-1/INFO]: Preparing spawn area: 6%
+[00:24:31] [Worker-Main-1/INFO]: Preparing spawn area: 6%
+[00:24:31] [Worker-Main-1/INFO]: Preparing spawn area: 6%
+[00:24:32] [Worker-Main-1/INFO]: Preparing spawn area: 6%
+[00:24:32] [Worker-Main-1/INFO]: Preparing spawn area: 6%
+[00:24:33] [Worker-Main-1/INFO]: Preparing spawn area: 6%
+[00:24:33] [Worker-Main-1/INFO]: Preparing spawn area: 6%
+[00:24:34] [Worker-Main-1/INFO]: Preparing spawn area: 6%
+[00:24:34] [Worker-Main-1/INFO]: Preparing spawn area: 6%
+[00:24:35] [Worker-Main-1/INFO]: Preparing spawn area: 32%
+[00:24:35] [Server thread/INFO]: Time elapsed: 16420 ms
+[00:24:35] [Server thread/INFO]: Done (40.798s)! For help, type "help"
+[00:24:49] [User Authenticator #1/INFO]: UUID of player ITouchTurf is d13c3a09-63eb-4932-9939-55253315d71c
+[00:24:50] [Server thread/INFO]: ITouchTurf[/45.49.168.48:54384] logged in with entity id 50 at (263.5, 68.0, 373.5)
+[00:24:50] [Server thread/INFO]: ITouchTurf joined the game
+[00:26:13] [Server thread/INFO]: Stopping the server
+[00:26:13] [Server thread/INFO]: Stopping server
+[00:26:13] [Server thread/INFO]: Saving players
+[00:26:13] [Server thread/INFO]: ITouchTurf lost connection: Server closed
+[00:26:13] [Server thread/INFO]: ITouchTurf left the game
+[00:26:13] [Server thread/INFO]: Saving worlds
+[00:26:15] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[00:26:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[00:26:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[00:26:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[00:26:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:26:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:26:20] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
