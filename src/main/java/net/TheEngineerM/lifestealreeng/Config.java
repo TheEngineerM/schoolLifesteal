@@ -1,4 +1,4 @@
-package net.TheEngineerM.LifestealMod;
+package net.TheEngineerM.lifestealreeng;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
