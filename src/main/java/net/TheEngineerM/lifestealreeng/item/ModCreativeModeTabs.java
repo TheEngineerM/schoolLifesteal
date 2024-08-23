@@ -1,6 +1,7 @@
 package net.TheEngineerM.lifestealreeng.item;
 
 import net.TheEngineerM.lifestealreeng.LifestealMod;
+import net.TheEngineerM.lifestealreeng.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,7 +20,9 @@ public class ModCreativeModeTabs {
             .title(Component.translatable("creativetab.lifesteal_tab"))
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.SAPPHIRE.get());
-                pOutput.accept(ModItems.RAW_SAPPHIRE.get());
+                pOutput.accept(ModItems.SAPPHIRE_DUST.get());
+
+                pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
             })
             .build());
 

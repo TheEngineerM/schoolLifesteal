@@ -1,6 +1,8 @@
 {
     "item.lifestealreeng.sapphire": "Sapphire",
-    "item.lifestealreeng.raw_sapphire": "Raw Sapphire",
+    "item.lifestealreeng.sapphire_dust": "Sapphire Dust",
+
+    "block.lifestealreeng.sapphire_block": "Block of Sapphire",
 
     "creativetab.lifesteal_tab": "Lifesteal ReEngineered"
 }

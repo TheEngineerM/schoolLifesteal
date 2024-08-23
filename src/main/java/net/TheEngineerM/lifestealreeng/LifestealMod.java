@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
+import net.TheEngineerM.lifestealreeng.block.ModBlocks;
 import net.TheEngineerM.lifestealreeng.item.ModItems;
 import net.TheEngineerM.lifestealreeng.item.ModCreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -37,6 +38,7 @@ public class LifestealMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -65,7 +67,7 @@ public class LifestealMod
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
-            event.accept(ModItems.RAW_SAPPHIRE);
+            event.accept(ModItems.SAPPHIRE_DUST);
         }
     }
 
