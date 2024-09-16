@@ -2,7 +2,8 @@
     "item.lifestealreeng.sapphire": "Sapphire",
     "item.lifestealreeng.sapphire_dust": "Sapphire Dust",
 
-    "block.lifestealreeng.sapphire_block": "Block of Sapphire",
+    "block.lifestealreeng.sapphire_block": "Sapphire Block",
+    "block.lifestealreeng.raw_sapphire_block": "Sapphire Ore",
 
     "creativetab.lifesteal_tab": "Lifesteal ReEngineered"
 }

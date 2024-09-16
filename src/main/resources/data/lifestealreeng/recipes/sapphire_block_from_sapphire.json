@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "lifestealreeng:sapphire"
+        }
+    },
+    "result": {
+        "item": "lifestealreeng:sapphire_block"
+    }
+}

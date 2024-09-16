@@ -5,8 +5,8 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
 import net.TheEngineerM.lifestealreeng.block.ModBlocks;
-import net.TheEngineerM.lifestealreeng.item.ModItems;
 import net.TheEngineerM.lifestealreeng.item.ModCreativeModeTabs;
+import net.TheEngineerM.lifestealreeng.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +33,9 @@ public class LifestealMod
     private static final Logger LOGGER = LogUtils.getLogger();
     public LifestealMod()
     {
+
+        LOGGER.info("Initializing LifestealMod");
+
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModeTabs.register(modEventBus);
@@ -47,6 +50,8 @@ public class LifestealMod
         modEventBus.addListener(this::addCreative);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        LOGGER.info("LifestealMod initialization complete");
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -65,6 +70,8 @@ public class LifestealMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        LOGGER.info("Adding items to creative tab");
+
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.SAPPHIRE_DUST);
@@ -75,7 +82,7 @@ public class LifestealMod
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
-
+        LOGGER.info("Server is starting");
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -85,7 +92,7 @@ public class LifestealMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            LOGGER.info("Client setup");
         }
     }
 }
