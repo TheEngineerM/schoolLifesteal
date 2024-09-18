@@ -7,7 +7,9 @@ import com.mojang.logging.LogUtils;
 import net.TheEngineerM.lifestealreeng.block.ModBlocks;
 import net.TheEngineerM.lifestealreeng.item.ModCreativeModeTabs;
 import net.TheEngineerM.lifestealreeng.item.ModItems;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -15,6 +17,7 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.*;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -22,6 +25,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraft.world.item.crafting.*;
+import net.minecraft.util.*;
+import net.minecraftforge.event.*;
+import net.minecraftforge.fml.common.Mod;
+
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(LifestealMod.MOD_ID)
@@ -93,6 +101,15 @@ public class LifestealMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             LOGGER.info("Client setup");
+        }
+    }
+    @Mod.EventBusSubscriber(modid = "lifestealreeng", bus = Mod.EventBusSubscriber.Bus.MOD)
+    public class ModEventSubscriber {
+        @SubscribeEvent
+        public static void onRegisterRecipes(RegistryEvent.Register<IRecipeSerializer<?>> event) {
+            event.getRegistry().registerAll(
+                new ShapedRecipe.Serializer().setRegistryName(new ResourceLocation("lifestealreeng", "sapphire"))
+            );
         }
     }
 }

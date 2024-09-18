@@ -1,0 +1,36 @@
+{
+    "parent": "minecraft:recipes/root",
+    "display": {
+      "icon": {
+        "item": "minecraft:diamond"
+      },
+      "title": {
+        "text": "Shiny Diamond"
+      },
+      "description": {
+        "text": "Obtain a diamond to unlock a special recipe"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "get_diamond": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "minecraft:diamond"
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "recipes": [
+        "lifestealreeng:sapphire"
+      ]
+    }
+  }
+  

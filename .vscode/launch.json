@@ -6,9 +6,12 @@
       "name": "runClient",
       "request": "launch",
       "mainClass": "net.minecraftforge.bootstrap.ForgeBootstrap",
+      "classPaths": [
+        "${workspaceFolder}/lib/*"
+      ],
       "projectName": "schoolLifesteal",
       "cwd": "${workspaceFolder}\\run",
-      "vmArgs": "-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -Dforge.enabledGameTestNamespaces=lifestealreeng -Dforge.enableGameTest=true -Djava.net.preferIPv6Addresses=system -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump --add-opens java.base/jdk.internal.misc=ALL-UNNAMED -Dio.netty.tryReflectionSetAccessible=true",
+      "vmArgs": "-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -Dforge.enabledGameTestNamespaces=lifestealreeng -Dforge.enableGameTest=true -Djava.net.preferIPv6Addresses=system -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump --add-opens java.base/jdk.internal.misc=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED -Dio.netty.tryReflectionSetAccessible=true",
       "args": "--launchTarget forge_userdev_client --version MOD_DEV --assetIndex 17 --assetsDir C:\\Users\\isaac\\.gradle\\caches\\forge_gradle\\assets --gameDir .",
       "env": {
         "MOD_CLASSES": "${workspaceFolder}\\build\\sourcesSets\\main",
