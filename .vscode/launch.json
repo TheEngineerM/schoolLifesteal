@@ -6,12 +6,9 @@
       "name": "runClient",
       "request": "launch",
       "mainClass": "net.minecraftforge.bootstrap.ForgeBootstrap",
-      "classPaths": [
-        "${workspaceFolder}/lib/*"
-      ],
       "projectName": "schoolLifesteal",
       "cwd": "${workspaceFolder}\\run",
-      "vmArgs": "-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -Dforge.enabledGameTestNamespaces=lifestealreeng -Dforge.enableGameTest=true -Djava.net.preferIPv6Addresses=system -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump --add-opens java.base/jdk.internal.misc=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED -Dio.netty.tryReflectionSetAccessible=true",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dREGISTRIES -Dforge.enabledGameTestNamespaces\u003dlifestealreeng -Dforge.enableGameTest\u003dtrue -Djava.net.preferIPv6Addresses\u003dsystem -XX:HeapDumpPath\u003dMojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
       "args": "--launchTarget forge_userdev_client --version MOD_DEV --assetIndex 17 --assetsDir C:\\Users\\isaac\\.gradle\\caches\\forge_gradle\\assets --gameDir .",
       "env": {
         "MOD_CLASSES": "${workspaceFolder}\\build\\sourcesSets\\main",
@@ -26,7 +23,7 @@
       "mainClass": "net.minecraftforge.bootstrap.ForgeBootstrap",
       "projectName": "schoolLifesteal",
       "cwd": "${workspaceFolder}\\run-data",
-      "vmArgs": "-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -Djava.net.preferIPv6Addresses=system --add-opens java.base/jdk.internal.misc=ALL-UNNAMED -Dio.netty.tryReflectionSetAccessible=true",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dREGISTRIES -Djava.net.preferIPv6Addresses\u003dsystem",
       "args": "--launchTarget forge_userdev_data --assetIndex 17 --assetsDir C:\\Users\\isaac\\.gradle\\caches\\forge_gradle\\assets --gameDir . --mod lifestealreeng --all --output C:\\Users\\isaac\\OneDrive\\Documents\\GitHub\\schoolLifesteal\\src\\generated\\resources --existing C:\\Users\\isaac\\OneDrive\\Documents\\GitHub\\schoolLifesteal\\src\\main\\resources",
       "env": {
         "MOD_CLASSES": "${workspaceFolder}\\build\\sourcesSets\\main",
@@ -41,7 +38,7 @@
       "mainClass": "net.minecraftforge.bootstrap.ForgeBootstrap",
       "projectName": "schoolLifesteal",
       "cwd": "${workspaceFolder}\\run",
-      "vmArgs": "-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -Dforge.enabledGameTestNamespaces=lifestealreeng -Djava.net.preferIPv6Addresses=system --add-opens java.base/jdk.internal.misc=ALL-UNNAMED -Dio.netty.tryReflectionSetAccessible=true",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dREGISTRIES -Dforge.enabledGameTestNamespaces\u003dlifestealreeng -Djava.net.preferIPv6Addresses\u003dsystem",
       "args": "--launchTarget forge_userdev_server_gametest --gameDir .",
       "env": {
         "MOD_CLASSES": "${workspaceFolder}\\build\\sourcesSets\\main",
@@ -56,7 +53,7 @@
       "mainClass": "net.minecraftforge.bootstrap.ForgeBootstrap",
       "projectName": "schoolLifesteal",
       "cwd": "${workspaceFolder}\\run",
-      "vmArgs": "-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -Dforge.enabledGameTestNamespaces=lifestealreeng -Dforge.enableGameTest=true -Djava.net.preferIPv6Addresses=system --add-opens java.base/jdk.internal.misc=ALL-UNNAMED -Dio.netty.tryReflectionSetAccessible=true",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dREGISTRIES -Dforge.enabledGameTestNamespaces\u003dlifestealreeng -Dforge.enableGameTest\u003dtrue -Djava.net.preferIPv6Addresses\u003dsystem",
       "args": "--launchTarget forge_userdev_server --gameDir . --nogui",
       "env": {
         "MOD_CLASSES": "${workspaceFolder}\\build\\sourcesSets\\main",

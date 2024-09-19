@@ -1,10 +1,26 @@
 1.21.x Changelog
 52.0
 ====
- - 52.0.3 Properly ignore unknown mod files (#10063)
- - 52.0.2 Add level access to Item.TooltipContext if available.
- - 52.0.1 Load mods that declare explicit 1.21 compatibility as 1.21.1 is a minor bugfix.
- - 52.0.0 1.21.1
+ - 52.0.16 Fix layering of translucent sprites being broken by re-adding blur call Mojang removed (#10115)
+ - 52.0.15 Cleanup length and size checks (#10108)
+ - 52.0.14 Update vulnerable `eclipse` dependency (#10109)
+ - 52.0.13 Add and fire SystemMessageReceivedEvent
+           Replaces ClientChatReceivedEvent.System which was not fired due to Mojang changing ChatType to a registry.
+ - 52.0.12 Fix highlighted item tooltip rendering twice. Closes #10112
+ - 52.0.11 Fix Network hooks not being initialized on GameTestServer (#10081)
+           Add rudimentary custom networking tests.
+ - 52.0.10 Fix inverted logic in TagEmptyCondition (#10069)
+ - 52.0.9  [1.21.1] Optionally supply `FMLJavaModLoadingContext` as a param to mod constructors (#10074)
+           Also made `FMLJavaModLoadingContext` extend `ModLoadingContext`. See the PR description for example usage.
+ - 52.0.8  Fix issues with `QuadBakingVertexConsumer` and Forge's OBJ loader (#10065)
+ - 52.0.7  Fire `OnDatapackSyncEvent` when a player joins a server (#10076)
+ - 52.0.6  Add a few Method Helpers onto ResourceKey to make getting Data Driven Entries Simpler (#10071)
+ - 52.0.5  Fix network channels not initializing during server transfers. Closes #10067
+ - 52.0.4  [1.21.1] ModLoading cleanup and optimisations (#10052)
+ - 52.0.3  Properly ignore unknown mod files (#10063)
+ - 52.0.2  Add level access to Item.TooltipContext if available.
+ - 52.0.1  Load mods that declare explicit 1.21 compatibility as 1.21.1 is a minor bugfix.
+ - 52.0.0  1.21.1
 
 51.0
 ====

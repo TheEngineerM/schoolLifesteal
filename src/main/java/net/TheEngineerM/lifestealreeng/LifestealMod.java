@@ -7,19 +7,20 @@ import com.mojang.logging.LogUtils;
 import net.TheEngineerM.lifestealreeng.block.ModBlocks;
 import net.TheEngineerM.lifestealreeng.item.ModCreativeModeTabs;
 import net.TheEngineerM.lifestealreeng.item.ModItems;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.crafting.ShapedRecipe;
+//import net.minecraft.core.NonNullList;
+//import net.minecraft.resources.ResourceLocation;
+//import net.minecraft.world.entity.player.Inventory;
+//import net.minecraft.world.item.CreativeModeTab;
+//import net.minecraft.world.item.CreativeModeTabs;
+//import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+//import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.*;
+//import net.minecraftforge.fml.*;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -27,10 +28,17 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraft.world.item.crafting.*;
-import net.minecraft.util.*;
-import net.minecraftforge.event.*;
-import net.minecraftforge.fml.common.Mod;
+//import net.minecraft.world.item.crafting.*;
+//import net.minecraft.util.*;
+//import net.minecraftforge.event.*;
+//import net.minecraft.resources.ResourceLocation;
+//import net.minecraft.core.NonNullList;
+//import net.minecraft.world.item.ItemStack;
+//import net.minecraft.world.item.Items;
+//import net.minecraft.world.item.crafting.Ingredient;
+//import net.minecraft.world.item.crafting.ShapedRecipe;
+//import net.minecraftforge.event.server.ServerStartingEvent;
+
 
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -109,4 +117,5 @@ public class LifestealMod
             LOGGER.info("Client setup");
         }
     }
+       
 }
