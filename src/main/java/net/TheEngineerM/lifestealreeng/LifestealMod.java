@@ -8,6 +8,8 @@ import net.TheEngineerM.lifestealreeng.block.ModBlocks;
 import net.TheEngineerM.lifestealreeng.item.ModCreativeModeTabs;
 import net.TheEngineerM.lifestealreeng.item.ModItems;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.block.Blocks;
@@ -55,7 +57,7 @@ public class LifestealMod
 
         MinecraftForge.EVENT_BUS.register(this);
 
-        modEventBus.addListener(this::addCreative);
+        // modEventBus.addListener(this::addCreative);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
@@ -76,15 +78,19 @@ public class LifestealMod
     }
 
     // Add the example block item to the building blocks tab
+    /*
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         LOGGER.info("Adding items to creative tab");
 
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        CreativeModeTab ingredientsTab = CreativeModeTabs.TAB_INGREDIENTS;
+
+        if(event.getTabKey().equals(CreativeModeTabs.INGREDIENTS)) {
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.SAPPHIRE_DUST);
         }
     }
+    */
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
@@ -101,15 +107,6 @@ public class LifestealMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             LOGGER.info("Client setup");
-        }
-    }
-    @Mod.EventBusSubscriber(modid = "lifestealreeng", bus = Mod.EventBusSubscriber.Bus.MOD)
-    public class ModEventSubscriber {
-        @SubscribeEvent
-        public static void onRegisterRecipes(RegistryEvent.Register<IRecipeSerializer<?>> event) {
-            event.getRegistry().registerAll(
-                new ShapedRecipe.Serializer().setRegistryName(new ResourceLocation("lifestealreeng", "sapphire"))
-            );
         }
     }
 }
